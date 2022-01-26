@@ -1,28 +1,34 @@
-<header class="header @@if (context.mod) { header--@@mod }">
-  <div class="header__wrapper">
-    <a class="header__logo" @@if (!context.main) { href="main.html"} aria-label="Переход на главную">
-      Логотип
-    </a>
+<header class="header">
+  <div class="container">
+    <div class="header__wrapper">
+      <a class="header__logo" @@if (!context.index) { href="index.html" } aria-label="Переход на главную">
+        <img src="img/content/logo.png" width="90" height="90" alt="Логотип центра развития Арион">
+      </a>
 
-    <nav class="main-nav">
-      <button class="main-nav__toggle btn-reset" type="button" aria-label="Переключатель отображения меню" aria-pressed="false">
-        <svg width="20" height="20">
-          <use xlink:href="#icon-burger"></use>
-        </svg>
-      </button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link @@if (context.headerActiveLinkIndex === 0) { main-nav__link--active }" @@if (context.headerActiveLinkIndex !== 0) { href="#" }>Страница 1</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link @@if (context.headerActiveLinkIndex === 1) { main-nav__link--active }" @@if (context.headerActiveLinkIndex !== 1) { href="#" }>Страница 2</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link @@if (context.headerActiveLinkIndex === 2) { main-nav__link--active }" @@if (context.headerActiveLinkIndex !== 2) { href="#" }>Страница 3</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+      <nav class="main-nav">
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link @@if (context.headerActiveLinkIndex === 0) { main-nav__link--active }" @@if (context.headerActiveLinkIndex !==0) { href="index.html" }>Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link @@if (context.headerActiveLinkIndex === 1) { main-nav__link--active }" @@if (context.headerActiveLinkIndex !==1) { href="arion.html" }>О нас</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link @@if (context.headerActiveLinkIndex === 2) { main-nav__link--active }" @@if (context.headerActiveLinkIndex !==2) { href="contacts.html" }>Контакты</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link @@if (context.headerActiveLinkIndex === 3) { main-nav__link--active }" @@if (context.headerActiveLinkIndex !==3) { href="courses.html" }>Курсы</a>
+            </li>
+          </ul>
+        </div>
+        <button class="main-nav__toggle btn-reset" type="button" aria-label="Переключатель отображения меню"
+          aria-pressed="false">
+          <svg width="20" height="20">
+            <use xlink:href="#icon-burger"></use>
+          </svg>
+        </button>
+      </nav>
+    </div>
   </div>
 </header>

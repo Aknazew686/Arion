@@ -22,7 +22,7 @@
   <!-- используйте только для шрифта находящегося на первом экране -->
   <!-- <link rel="preload" href="fonts/placeholder.woff2" as="font" crossorigin="anonymous"> -->
   <link rel="stylesheet" href="css/style.min.css">
-  <title>Арион — Главная</title>
+  <title>Арион — Курсы</title>
 </head>
 
 <body>
@@ -34,36 +34,39 @@
     </svg>
   </div>
   <div class="wrapper">
-    <header class="header ">
-      <div class="header__wrapper">
-        <a class="header__logo" aria-label="Переход на главную">
-          Логотип
-        </a>
-        <nav class="main-nav">
-          <button class="main-nav__toggle btn-reset" type="button" aria-label="Переключатель отображения меню" aria-pressed="false">
-            <svg width="20" height="20">
-              <use xlink:href="#icon-burger"></use>
-            </svg>
-          </button>
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list">
-              <li class="main-nav__item">
-                <a class="main-nav__link  main-nav__link--active ">Страница 1</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link " href="#">Страница 2</a>
-              </li>
-              <li class="main-nav__item">
-                <a class="main-nav__link " href="#">Страница 3</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <a class="header__logo" href="index.html" aria-label="Переход на главную">
+            <img src="img/content/logo.png" width="90" height="90" alt="Логотип центра развития Арион">
+          </a>
+          <nav class="main-nav">
+            <div class="main-nav__wrapper">
+              <ul class="main-nav__list">
+                <li class="main-nav__item">
+                  <a class="main-nav__link " href="index.html">Главная</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link " href="arion.html">О нас</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link " href="contacts.html">Контакты</a>
+                </li>
+                <li class="main-nav__item">
+                  <a class="main-nav__link  main-nav__link--active ">Курсы</a>
+                </li>
+              </ul>
+            </div>
+            <button class="main-nav__toggle btn-reset" type="button" aria-label="Переключатель отображения меню" aria-pressed="false">
+              <svg width="20" height="20">
+                <use xlink:href="#icon-burger"></use>
+              </svg>
+            </button>
+          </nav>
+        </div>
       </div>
     </header>
     <main>
-      <div class="container">
-      </div>
     </main>
     <footer class="footer"></footer>
   </div>

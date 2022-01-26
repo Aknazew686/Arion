@@ -1,0 +1,28 @@
+.main-nav {
+  &__list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-left: 250px;
+  }
+
+  &__item {
+    font-weight: 400;
+    font-size: 21px;
+    margin-right: 150px;
+  }
+
+  &__link {
+    color: #ffffff;
+
+    &--active {
+      color: #20a7ff;
+    }
+
+    &:hover,
+    &:focus {
+      color: #20a7ff;
+    }
+  }
+}
